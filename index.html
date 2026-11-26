@@ -10,12 +10,12 @@ a{color:var(--rojo)}code{font-size:.85em;background:#222;padding:1px 5px;border-
 .top{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:18px;padding:12px 24px;background:rgba(19,19,19,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
 .top>img{height:34px}.top nav{display:flex;gap:16px;flex-wrap:wrap;flex:1}.top nav a{color:#ddd;text-decoration:none;font:600 13px Inter;text-transform:uppercase;letter-spacing:.04em}.top nav a:hover{color:var(--rojo)}
 .lang{display:flex;border:1px solid #444}.lang button{background:none;border:0;color:#aaa;padding:6px 10px;font:600 12px Inter;cursor:pointer}.lang button.on{background:var(--rojo);color:#fff}
-.hero{position:relative;min-height:560px;background-size:cover;background-position:center;display:flex;align-items:flex-end}
-.hero-velo{position:absolute;inset:0;background:linear-gradient(180deg,rgba(19,19,19,.35),rgba(19,19,19,.96))}
+.hero{position:relative;min-height:580px;display:flex;align-items:flex-end;background:#131313 url(recursos/ig_celebran.jpg) no-repeat right 30%/auto 115%}
+.hero-velo{position:absolute;inset:0;background:linear-gradient(90deg,#131313 0%,#131313 34%,rgba(19,19,19,.55) 58%,rgba(19,19,19,.05) 80%),linear-gradient(180deg,rgba(19,19,19,0) 60%,#131313 100%)}
 .hero-in{position:relative;max-width:1180px;margin:0 auto;padding:60px 24px 48px;width:100%}
 .kicker{font:700 14px JF;letter-spacing:.18em;color:var(--rojo);margin:0}
 h1,h2,h3,h4{font-family:JF,Inter,sans-serif;font-weight:700;text-transform:uppercase;line-height:1;color:#fff;margin:0}
-h1{font-size:clamp(44px,7vw,92px);font-style:italic;margin:10px 0 16px}.hero p{max-width:760px;font-size:18px;color:#ddd}
+h1{font-size:clamp(40px,5.2vw,68px);font-style:italic;margin:10px 0 16px;max-width:640px}.hero p{max-width:600px;font-size:17px;color:#ddd}
 .kpis{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.kpis div{background:rgba(28,28,28,.9);border-left:4px solid var(--rojo);padding:10px 18px}.kpis b{display:block;font:700 34px JF;color:#fff}.kpis span{font-size:13px;color:#bbb}
 main{max-width:1180px;margin:0 auto;padding:0 24px 40px}section{padding:56px 0 8px;border-bottom:1px solid var(--linea)}
 h2{font-size:clamp(34px,5vw,56px);font-style:italic;margin-bottom:18px}h3{font-size:26px;margin:34px 0 12px}h4{font-size:22px;margin-bottom:10px}
@@ -34,32 +34,37 @@ th{font:700 15px JF;text-transform:uppercase;letter-spacing:.03em;color:#fff;bac
 .fcard{margin:26px 0 34px}.fcard h4{font-size:26px}.fpar{display:flex;gap:18px;align-items:flex-end;flex-wrap:wrap;margin:14px 0}.fnotas{color:#ccc;font-size:14.5px;padding-left:18px}
 .fly{position:relative;overflow:hidden;background:#131313;color:#fff;font-family:JF,Inter,sans-serif;flex:none;container-type:inline-size}
 .fly.post{width:400px;aspect-ratio:4/5}.fly.story{width:281px;aspect-ratio:9/16}
-.fly-foto{position:absolute;inset:0;background-size:cover;filter:grayscale(.35) contrast(1.08)}
-.fly-velo{position:absolute;inset:0;background:linear-gradient(180deg,rgba(19,19,19,.7) 0%,rgba(19,19,19,.12) 20%,rgba(19,19,19,.25) 34%,rgba(19,19,19,.88) 52%,#131313 74%)}
-.fly-in{position:absolute;inset:0;display:flex;flex-direction:column;align-items:flex-start;padding:6cqw 7cqw 5.5cqw}
-.fly-logo{width:30cqw}.fly-tag{margin-top:auto;margin-bottom:1.8cqw;font-size:3.4cqw;letter-spacing:.14em;background:var(--rojo);padding:.7cqw 2.2cqw}
-.fly-fase{font-size:12.5cqw;line-height:.88;font-style:italic;text-shadow:0 2px 12px rgba(0,0,0,.4)}
-.fly-prod{font:600 3cqw/1.25 Inter;letter-spacing:.06em;color:#e6e6e6;margin-top:1.6cqw}
-.fly-monto{display:flex;align-items:baseline;gap:2cqw;margin-top:2cqw}.fly-monto b{font-size:15cqw;line-height:.9;color:var(--rojo)}.fly-monto span{font-size:7cqw}
-.fly-cod{margin-top:2.2cqw;border:.5cqw solid #fff;padding:.8cqw 2.6cqw;font-size:4.6cqw;letter-spacing:.06em}.fly-cod b{color:#fff}
-.fly-vig{font:600 2.9cqw Inter;letter-spacing:.08em;color:#cfcfcf;margin-top:1.8cqw}
-.fly-cta{margin-top:3cqw;background:var(--rojo);font-size:5cqw;padding:1.3cqw 5cqw;letter-spacing:.05em}
-.fly-pie{display:flex;align-items:center;gap:4cqw;margin-top:3.5cqw;width:100%;border-top:1px solid rgba(255,255,255,.25);padding-top:2.6cqw}.fly-pie img{height:5.5cqw;filter:brightness(0) invert(1);opacity:.9}.fly-pie span{margin-left:auto;font-size:3.2cqw;letter-spacing:.1em}
-.fly.story .fly-in{padding:9cqw 7cqw 42cqw}.fly.story .fly-logo{width:40cqw}.fly.story .fly-fase{font-size:15cqw}.fly.story .fly-monto b{font-size:18cqw}.fly.story .fly-tag{font-size:3.8cqw}
-.fly.story .fly-velo{background:linear-gradient(180deg,rgba(19,19,19,.7) 0%,rgba(19,19,19,.1) 16%,rgba(19,19,19,.3) 30%,rgba(19,19,19,.9) 46%,#131313 62%)}
+.fly-foto{position:absolute;inset:0;background-size:cover;filter:contrast(1.05) saturate(.9)}
+.fly-velo{position:absolute;inset:0;background:linear-gradient(180deg,rgba(19,19,19,.65) 0%,rgba(19,19,19,0) 18%,rgba(19,19,19,0) 44%,rgba(19,19,19,.85) 60%,#131313 78%)}
+.fly-in{position:absolute;inset:0;display:flex;flex-direction:column;align-items:flex-start;padding:5.5cqw 6.5cqw 5cqw}
+.fly-logo{width:28cqw}.fly-bajo{margin-top:auto;width:100%}
+.fly-tag{display:inline-block;margin-bottom:1.6cqw;font-size:3.2cqw;letter-spacing:.14em;background:var(--rojo);padding:.6cqw 2cqw}
+.fly-fase{font-size:11.5cqw;line-height:.88;font-style:italic;text-shadow:0 2px 12px rgba(0,0,0,.45)}
+.fly-prod{font:600 2.7cqw/1.2 Inter;letter-spacing:.06em;color:#e6e6e6;margin-top:1.4cqw}
+.fly-fila{display:flex;align-items:flex-end;justify-content:space-between;gap:3cqw;margin-top:2cqw}
+.fly-monto{display:flex;align-items:baseline;gap:1.5cqw}.fly-monto b{font-size:14cqw;line-height:.85;color:var(--rojo)}.fly-monto span{font-size:6cqw}
+.fly-dcha{text-align:right}.fly-cod{display:inline-block;border:.5cqw solid #fff;padding:.7cqw 2.4cqw;font-size:4.2cqw;letter-spacing:.06em}
+.fly-vig{font:600 2.5cqw Inter;letter-spacing:.06em;color:#cfcfcf;margin-top:1.2cqw}
+.fly-fin{align-items:center;border-top:1px solid rgba(255,255,255,.22);padding-top:2.4cqw;margin-top:2.6cqw}
+.fly-cta{background:var(--rojo);font-size:4.4cqw;padding:1.2cqw 4.5cqw;letter-spacing:.05em}
+.fly-pie{display:flex;align-items:center;gap:3cqw}.fly-pie img{height:5cqw;filter:brightness(0) invert(1);opacity:.9}.fly-pie span{font-size:2.9cqw;letter-spacing:.1em}
+.fly.story .fly-in{padding:8cqw 7cqw 40cqw}.fly.story .fly-logo{width:38cqw}.fly.story .fly-fase{font-size:14cqw}.fly.story .fly-monto b{font-size:16cqw}
+.fly.story .fly-tag{font-size:3.8cqw}.fly.story .fly-prod{font-size:3.2cqw}.fly.story .fly-cod{font-size:4.6cqw}.fly.story .fly-vig{font-size:2.9cqw}
+.fly.story .fly-fin{flex-direction:column;align-items:flex-start;gap:3cqw}.fly.story .fly-pie{width:100%;justify-content:space-between}.fly.story .fly-cta{font-size:5.2cqw}
+.fly.story .fly-velo{background:linear-gradient(180deg,rgba(19,19,19,.65) 0%,rgba(19,19,19,0) 14%,rgba(19,19,19,0) 36%,rgba(19,19,19,.85) 50%,#131313 64%)}
 .fly.story:after{content:"";position:absolute;left:18%;right:18%;bottom:6%;height:11%;border:1.5px dashed rgba(255,255,255,.35);border-radius:10px}
 details.msg{background:var(--bloque);border:1px solid var(--linea);margin:10px 0}details.msg summary{cursor:pointer;padding:14px 18px;font:700 20px JF;text-transform:uppercase;color:#fff}
 .msg2{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:0 18px 6px}.msg2 h5{font:700 15px JF;color:var(--rojo);margin:6px 0;letter-spacing:.08em}
 .meta{font-size:14px;color:#ccc}.cuerpo{background:#fff;color:#222;padding:16px 18px;font-size:14.5px}.cuerpo ul{padding-left:18px}.btn-m{display:inline-block;background:var(--rojo);color:#fff;font:700 16px JF;padding:8px 20px;margin-top:6px;text-transform:uppercase}
 pre{white-space:pre-wrap;background:#0f1a12;color:#e8f5e9;padding:14px;font:14px/1.5 Inter;border-left:4px solid #25D366;margin:0}.link{padding:0 18px 14px;font-size:13px;color:#aaa}
 footer{text-align:center;padding:40px 20px;color:#888;font-size:13px}footer img{height:40px;opacity:.8}
-@media(max-width:860px){.g2,.g3,.msg2{grid-template-columns:1fr}.fotos{grid-template-columns:repeat(2,1fr)}.top nav{display:none}.fly.post{width:100%;max-width:400px}.fly.story{width:72%;max-width:281px}.paleta{grid-template-columns:repeat(2,1fr)}.hero{min-height:480px}}
+@media(max-width:860px){.hero{background-size:100% auto;background-position:center top;padding-top:52vw}.hero-velo{background:linear-gradient(180deg,rgba(19,19,19,0) 25%,#131313 62%)}.g2,.g3,.msg2{grid-template-columns:1fr}.fotos{grid-template-columns:repeat(2,1fr)}.top nav{display:none}.fly.post{width:100%;max-width:400px}.fly.story{width:72%;max-width:281px}.paleta{grid-template-columns:repeat(2,1fr)}.hero{min-height:480px}}
 </style></head><body>
 <header class="top"><img src="recursos/logo_header.png" alt="Juventus Residency"><nav>
 <a href="#producto"><span class="lv" lang="es">Producto</span><span class="lv" lang="en">Product</span></a><a href="#linea"><span class="lv" lang="es">Línea gráfica</span><span class="lv" lang="en">Visual line</span></a><a href="#flyers">Flyers</a><a href="#mensajes"><span class="lv" lang="es">Mensajes</span><span class="lv" lang="en">Messages</span></a><a href="#bases"><span class="lv" lang="es">Bases</span><span class="lv" lang="en">Lists</span></a><a href="#meta">Meta</a><a href="#web">Web</a><a href="#pendientes"><span class="lv" lang="es">Pendientes</span><span class="lv" lang="en">To confirm</span></a></nav>
 <div class="lang"><button data-set="es">ES</button><button data-set="en">EN</button></div></header>
 
-<section class="hero" style="background-image:url(recursos/tribuna.jpg)"><div class="hero-velo"></div><div class="hero-in">
+<section class="hero"><div class="hero-velo"></div><div class="hero-in">
 <p class="kicker">JUVENTUS RESIDENCY · SUMMER 2027</p>
 <h1><span class="lv" lang="es">Estrategia de marketing<br>Residency Summer Camps</span><span class="lv" lang="en">Marketing strategy<br>Residency Summer Camps</span></h1>
 <p><span class="lv" lang="es">Correo, SMS, WhatsApp y una prueba de Meta Ads para llevar familias de Athletum y familias externas al High-Performance Training Camp de Juventus Residency en Italia. Black Friday del 27 al 30 de noviembre y early bird desde el 1 de diciembre.</span><span class="lv" lang="en">Email, SMS, WhatsApp and a Meta Ads test to bring Athletum families and outside families to the Juventus Residency High-Performance Training Camp in Italy. Black Friday Nov 27–30 and early bird from December 1.</span></p>
@@ -111,7 +116,7 @@ footer{text-align:center;padding:40px 20px;color:#888;font-size:13px}footer img{
 <div class="btn-demo">APPLY NOW</div><p class="nota"><span class="lv" lang="es">Botón rojo, esquinas rectas, texto blanco en mayúsculas (Juventus Fans). Alternativa: borde rojo sobre negro.</span><span class="lv" lang="en">Red button, square corners, white uppercase text (Juventus Fans). Alternative: red outline on black.</span></p></div></div>
 <div class="g2">
 <div class="card"><h4><span class="lv" lang="es">Así se construye una pieza</span><span class="lv" lang="en">How a piece is built</span></h4><ol class="lista num">
-<li><span class="lv" lang="es">Foto real del campus, de Vinovo o de entrenamientos; si hay jugador en primer plano, el fondo puede ir en blanco y negro.</span><span class="lv" lang="en">Real photo of the campus, Vinovo or training; with a player in the foreground, the background can go black and white.</span></li>
+<li><span class="lv" lang="es">Foto real con emoción: chicos celebrando, entrenadores con jugadores, el grupo en el Allianz. Las caras en la mitad de arriba.</span><span class="lv" lang="en">Real photo with emotion: players celebrating, coaches with players, the group at the Allianz. Faces in the top half.</span></li>
 <li><span class="lv" lang="es">Degradado negro desde abajo para que el texto se lea; nunca texto sobre caras.</span><span class="lv" lang="en">Black gradient from the bottom so text reads; never text over faces.</span></li>
 <li><span class="lv" lang="es">Arriba: logo "J | JUVENTUS RESIDENCY" en blanco.</span><span class="lv" lang="en">Top: white "J | JUVENTUS RESIDENCY" logo.</span></li>
 <li><span class="lv" lang="es">Titular en Juventus Fans, blanco; la cifra o el dato fuerte en rojo #FF2850.</span><span class="lv" lang="en">Headline in Juventus Fans, white; the key figure in red #FF2850.</span></li>
@@ -122,42 +127,44 @@ footer{text-align:center;padding:40px 20px;color:#888;font-size:13px}footer img{
 <li><span class="lv" lang="es">Imágenes generadas con IA o jugadores del primer equipo como si fueran del camp.</span><span class="lv" lang="en">AI-generated images or first-team players shown as if they were at the camp.</span></li>
 <li><span class="lv" lang="es">Más de un descuento o código por pieza.</span><span class="lv" lang="en">More than one discount or code per piece.</span></li>
 <li><span class="lv" lang="es">Fechas de 2025 o 2026: todo dice "Summer 2027" hasta tener las fechas nuevas.</span><span class="lv" lang="en">2025 or 2026 dates: everything says "Summer 2027" until the new dates are set.</span></li></ul></div></div>
-<h3><span class="lv" lang="es">Fotos disponibles en la web de Residency</span><span class="lv" lang="en">Photos available on the Residency website</span></h3>
-<div class="fotos"><figure><img src="recursos/campus_aereo.jpg" alt="" loading="lazy"><figcaption><span class="lv" lang="es">Campus y canchas</span><span class="lv" lang="en">Campus and fields</span></figcaption></figure><figure><img src="recursos/campus_edificio.jpg" alt="" loading="lazy"><figcaption><span class="lv" lang="es">Edificio de la academia</span><span class="lv" lang="en">Academy building</span></figcaption></figure><figure><img src="recursos/habitacion.jpg" alt="" loading="lazy"><figcaption><span class="lv" lang="es">Habitaciones</span><span class="lv" lang="en">Rooms</span></figcaption></figure><figure><img src="recursos/comedor.jpg" alt="" loading="lazy"><figcaption><span class="lv" lang="es">Comedor</span><span class="lv" lang="en">Dining area</span></figcaption></figure><figure><img src="recursos/gimnasio.jpg" alt="" loading="lazy"><figcaption><span class="lv" lang="es">Gimnasio</span><span class="lv" lang="en">Gym</span></figcaption></figure><figure><img src="recursos/tribuna.jpg" alt="" loading="lazy"><figcaption><span class="lv" lang="es">Tribuna Juventus Academy</span><span class="lv" lang="en">Juventus Academy stand</span></figcaption></figure><figure><img src="recursos/eb_ath.jpg" alt="" loading="lazy"><figcaption><span class="lv" lang="es">Allianz Stadium (tour)</span><span class="lv" lang="en">Allianz Stadium (tour)</span></figcaption></figure><figure><img src="recursos/turin.jpg" alt="" loading="lazy"><figcaption><span class="lv" lang="es">Turín</span><span class="lv" lang="en">Turin</span></figcaption></figure></div>
-<p class="nota"><span class="lv" lang="es">Se usarán estas mientras llega el material del equipo de Italia (carpeta JResidency en OneDrive y flyers anteriores de Jacopo).</span><span class="lv" lang="en">These are used until the Italy team material arrives (JResidency OneDrive folder and previous flyers from Jacopo).</span></p></section>
+<h3><span class="lv" lang="es">Fotos para las piezas</span><span class="lv" lang="en">Photos for the pieces</span></h3>
+<div class="fotos"><figure><img src="recursos/ig_huddle.jpg" alt="" loading="lazy"><figcaption><span class="lv" lang="es">Camp de verano 2025 · Vinovo</span><span class="lv" lang="en">Summer Camp 2025 · Vinovo</span></figcaption></figure><figure><img src="recursos/ig_saludo.jpg" alt="" loading="lazy"><figcaption><span class="lv" lang="es">Camp de verano 2025</span><span class="lv" lang="en">Summer Camp 2025</span></figcaption></figure><figure><img src="recursos/ig_abrazo.jpg" alt="" loading="lazy"><figcaption><span class="lv" lang="es">Unión de equipo en Vinovo</span><span class="lv" lang="en">Team spirit in Vinovo</span></figcaption></figure><figure><img src="recursos/ig_coach.jpg" alt="" loading="lazy"><figcaption><span class="lv" lang="es">Entrenadores de Juventus</span><span class="lv" lang="en">Juventus coaches</span></figcaption></figure><figure><img src="recursos/ig_choque.jpg" alt="" loading="lazy"><figcaption><span class="lv" lang="es">Torneo en Turín 2026</span><span class="lv" lang="en">Turin tournament 2026</span></figcaption></figure><figure><img src="recursos/ig_sonrisa.jpg" alt="" loading="lazy"><figcaption><span class="lv" lang="es">Jugadores del programa</span><span class="lv" lang="en">Program players</span></figcaption></figure><figure><img src="recursos/ig_celebran.jpg" alt="" loading="lazy"><figcaption><span class="lv" lang="es">Entrenamiento</span><span class="lv" lang="en">Training</span></figcaption></figure><figure><img src="recursos/ig_allianz.jpg" alt="" loading="lazy"><figcaption><span class="lv" lang="es">Partido en el Allianz Stadium</span><span class="lv" lang="en">Match at Allianz Stadium</span></figcaption></figure><figure><img src="recursos/ig_allianz_grupo.jpg" alt="" loading="lazy"><figcaption><span class="lv" lang="es">Tour del Allianz Stadium</span><span class="lv" lang="en">Allianz Stadium tour</span></figcaption></figure><figure><img src="recursos/ig_museo.jpg" alt="" loading="lazy"><figcaption><span class="lv" lang="es">Museo Juventus</span><span class="lv" lang="en">Juventus Museum</span></figcaption></figure><figure><img src="recursos/ig_entreno.jpg" alt="" loading="lazy"><figcaption><span class="lv" lang="es">Camp de verano 2026</span><span class="lv" lang="en">Summer Camp 2026</span></figcaption></figure><figure><img src="recursos/habitacion.jpg" alt="" loading="lazy"><figcaption><span class="lv" lang="es">Habitaciones del campus</span><span class="lv" lang="en">Campus rooms</span></figcaption></figure><figure><img src="recursos/campus_aereo.jpg" alt="" loading="lazy"><figcaption><span class="lv" lang="es">Campus y canchas</span><span class="lv" lang="en">Campus and fields</span></figcaption></figure></div>
+<p class="nota"><span class="lv" lang="es">Fotos del Instagram de @juventusresidency (camps de verano 2025 y 2026, Vinovo, Allianz) y de su web. Las piezas usan fotos con emoción: chicos, entrenadores y la experiencia; no tribunas ni estadios vacíos. Cuando llegue el material del equipo de Italia (carpeta JResidency y flyers de Jacopo) se suma.</span><span class="lv" lang="en">Photos from @juventusresidency on Instagram (2025 and 2026 summer camps, Vinovo, Allianz) and its website. Pieces use photos with emotion: players, coaches and the experience; no empty stands or stadiums. The Italy team material (JResidency folder and Jacopo flyers) will be added when it arrives.</span></p></section>
 
 <section id="flyers"><h2><span class="lv" lang="es">Los 4 flyers</span><span class="lv" lang="en">The 4 flyers</span></h2>
-<p class="nota"><span class="lv" lang="es">Maquetas con la línea de Residency y fotos reales de su web, en post 4:5 e historia 9:16. Los textos van en inglés (público de EE. UU.); para los chats de Athletum se puede hacer la misma pieza en español.</span><span class="lv" lang="en">Mock-ups with the Residency line and real photos from its website, in 4:5 post and 9:16 story. Copy is in English (U.S. audience); for the Athletum chats the same piece can be made in Spanish.</span></p>
+<p class="nota"><span class="lv" lang="es">Maquetas con la línea de Residency y fotos reales de su Instagram, en post 4:5 e historia 9:16. Los textos van en inglés (público de EE. UU.); para los chats de Athletum se puede hacer la misma pieza en español.</span><span class="lv" lang="en">Mock-ups with the Residency line and real photos from its Instagram, in 4:5 post and 9:16 story. Copy is in English (U.S. audience); for the Athletum chats the same piece can be made in Spanish.</span></p>
 <div class="aviso"><span class="lv" lang="es"><b>Por confirmar:</b> en la hoja de tareas (fila 38) BF27 aparece como "early bird esterni"; en la reunión se dijo Black Friday externos. Aquí se usa BF27 para Black Friday y EB27 para early bird.</span><span class="lv" lang="en"><b>To confirm:</b> in the task sheet (row 38) BF27 appears as "early bird esterni"; in the meeting it was Black Friday for outside families. Here BF27 is used for Black Friday and EB27 for early bird.</span></div>
 <article class="fcard">
   <h4>Black Friday · <span class="lv" lang="es">Familias athletum</span><span class="lv" lang="en">Athletum families</span> · <code>BF1000</code></h4>
   <div class="fpar"><div class="fly post" data-fly="bf1000-post">
-  <div class="fly-foto" style="background-image:url(recursos/bf_ath.jpg);background-position:12% 50%"></div>
+  <div class="fly-foto" style="background-image:url(recursos/ig_sonrisa.jpg);background-position:62% 50%"></div>
   <div class="fly-velo"></div>
   <div class="fly-in">
     <img class="fly-logo" src="recursos/logo_header.png" alt="Juventus Residency">
-    <div class="fly-tag">ATHLETUM FAMILIES</div>
-    <div class="fly-fase">BLACK FRIDAY</div>
-    <div class="fly-prod">HIGH-PERFORMANCE<br>TRAINING CAMP · ITALY</div>
-    <div class="fly-monto"><b>$1,000</b><span>OFF</span></div>
-    <div class="fly-cod">CODE <b>BF1000</b></div>
-    <div class="fly-vig">NOV 27 – 30 ONLY</div>
-    <div class="fly-cta">APPLY NOW</div>
-    <div class="fly-pie"><img src="recursos/logo_medical.png" alt="J Medical"><img src="recursos/logo_adidas.png" alt="adidas"><span>JRESIDENCY.COM</span></div>
+    <div class="fly-bajo">
+      <div class="fly-tag">ATHLETUM FAMILIES</div>
+      <div class="fly-fase">BLACK FRIDAY</div>
+      <div class="fly-prod">HIGH-PERFORMANCE TRAINING CAMP · ITALY</div>
+      <div class="fly-fila"><div class="fly-monto"><b>$1,000</b><span>OFF</span></div>
+        <div class="fly-dcha"><div class="fly-cod">CODE <b>BF1000</b></div><div class="fly-vig">NOV 27 – 30 ONLY</div></div></div>
+      <div class="fly-fila fly-fin"><div class="fly-cta">APPLY NOW</div>
+        <div class="fly-pie"><img src="recursos/logo_medical.png" alt="J Medical"><img src="recursos/logo_adidas.png" alt="adidas"><span>JRESIDENCY.COM</span></div></div>
+    </div>
   </div>
 </div><div class="fly story" data-fly="bf1000-story">
-  <div class="fly-foto" style="background-image:url(recursos/bf_ath.jpg);background-position:60% 50%"></div>
+  <div class="fly-foto" style="background-image:url(recursos/ig_sonrisa.jpg);background-position:70% 50%"></div>
   <div class="fly-velo"></div>
   <div class="fly-in">
     <img class="fly-logo" src="recursos/logo_header.png" alt="Juventus Residency">
-    <div class="fly-tag">ATHLETUM FAMILIES</div>
-    <div class="fly-fase">BLACK FRIDAY</div>
-    <div class="fly-prod">HIGH-PERFORMANCE<br>TRAINING CAMP · ITALY</div>
-    <div class="fly-monto"><b>$1,000</b><span>OFF</span></div>
-    <div class="fly-cod">CODE <b>BF1000</b></div>
-    <div class="fly-vig">NOV 27 – 30 ONLY</div>
-    <div class="fly-cta">APPLY NOW</div>
-    <div class="fly-pie"><img src="recursos/logo_medical.png" alt="J Medical"><img src="recursos/logo_adidas.png" alt="adidas"><span>JRESIDENCY.COM</span></div>
+    <div class="fly-bajo">
+      <div class="fly-tag">ATHLETUM FAMILIES</div>
+      <div class="fly-fase">BLACK FRIDAY</div>
+      <div class="fly-prod">HIGH-PERFORMANCE TRAINING CAMP · ITALY</div>
+      <div class="fly-fila"><div class="fly-monto"><b>$1,000</b><span>OFF</span></div>
+        <div class="fly-dcha"><div class="fly-cod">CODE <b>BF1000</b></div><div class="fly-vig">NOV 27 – 30 ONLY</div></div></div>
+      <div class="fly-fila fly-fin"><div class="fly-cta">APPLY NOW</div>
+        <div class="fly-pie"><img src="recursos/logo_medical.png" alt="J Medical"><img src="recursos/logo_adidas.png" alt="adidas"><span>JRESIDENCY.COM</span></div></div>
+    </div>
   </div>
 </div></div>
   <ul class="fnotas">
@@ -168,32 +175,34 @@ footer{text-align:center;padding:40px 20px;color:#888;font-size:13px}footer img{
 </article><article class="fcard">
   <h4>Black Friday · <span class="lv" lang="es">Externos</span><span class="lv" lang="en">Open to all players</span> · <code>BF27</code></h4>
   <div class="fpar"><div class="fly post" data-fly="bf27-post">
-  <div class="fly-foto" style="background-image:url(recursos/tribuna.jpg);background-position:50% 50%"></div>
+  <div class="fly-foto" style="background-image:url(recursos/ig_choque.jpg);background-position:50% 20%"></div>
   <div class="fly-velo"></div>
   <div class="fly-in">
     <img class="fly-logo" src="recursos/logo_header.png" alt="Juventus Residency">
-    <div class="fly-tag">SUMMER 2027 · ITALY</div>
-    <div class="fly-fase">BLACK FRIDAY</div>
-    <div class="fly-prod">HIGH-PERFORMANCE<br>TRAINING CAMP · ITALY</div>
-    <div class="fly-monto"><b>$750</b><span>OFF</span></div>
-    <div class="fly-cod">CODE <b>BF27</b></div>
-    <div class="fly-vig">NOV 27 – 30 ONLY</div>
-    <div class="fly-cta">APPLY NOW</div>
-    <div class="fly-pie"><img src="recursos/logo_medical.png" alt="J Medical"><img src="recursos/logo_adidas.png" alt="adidas"><span>JRESIDENCY.COM</span></div>
+    <div class="fly-bajo">
+      <div class="fly-tag">SUMMER 2027 · ITALY</div>
+      <div class="fly-fase">BLACK FRIDAY</div>
+      <div class="fly-prod">HIGH-PERFORMANCE TRAINING CAMP · ITALY</div>
+      <div class="fly-fila"><div class="fly-monto"><b>$750</b><span>OFF</span></div>
+        <div class="fly-dcha"><div class="fly-cod">CODE <b>BF27</b></div><div class="fly-vig">NOV 27 – 30 ONLY</div></div></div>
+      <div class="fly-fila fly-fin"><div class="fly-cta">APPLY NOW</div>
+        <div class="fly-pie"><img src="recursos/logo_medical.png" alt="J Medical"><img src="recursos/logo_adidas.png" alt="adidas"><span>JRESIDENCY.COM</span></div></div>
+    </div>
   </div>
 </div><div class="fly story" data-fly="bf27-story">
-  <div class="fly-foto" style="background-image:url(recursos/tribuna.jpg);background-position:50% 50%"></div>
+  <div class="fly-foto" style="background-image:url(recursos/ig_choque.jpg);background-position:55% 20%"></div>
   <div class="fly-velo"></div>
   <div class="fly-in">
     <img class="fly-logo" src="recursos/logo_header.png" alt="Juventus Residency">
-    <div class="fly-tag">SUMMER 2027 · ITALY</div>
-    <div class="fly-fase">BLACK FRIDAY</div>
-    <div class="fly-prod">HIGH-PERFORMANCE<br>TRAINING CAMP · ITALY</div>
-    <div class="fly-monto"><b>$750</b><span>OFF</span></div>
-    <div class="fly-cod">CODE <b>BF27</b></div>
-    <div class="fly-vig">NOV 27 – 30 ONLY</div>
-    <div class="fly-cta">APPLY NOW</div>
-    <div class="fly-pie"><img src="recursos/logo_medical.png" alt="J Medical"><img src="recursos/logo_adidas.png" alt="adidas"><span>JRESIDENCY.COM</span></div>
+    <div class="fly-bajo">
+      <div class="fly-tag">SUMMER 2027 · ITALY</div>
+      <div class="fly-fase">BLACK FRIDAY</div>
+      <div class="fly-prod">HIGH-PERFORMANCE TRAINING CAMP · ITALY</div>
+      <div class="fly-fila"><div class="fly-monto"><b>$750</b><span>OFF</span></div>
+        <div class="fly-dcha"><div class="fly-cod">CODE <b>BF27</b></div><div class="fly-vig">NOV 27 – 30 ONLY</div></div></div>
+      <div class="fly-fila fly-fin"><div class="fly-cta">APPLY NOW</div>
+        <div class="fly-pie"><img src="recursos/logo_medical.png" alt="J Medical"><img src="recursos/logo_adidas.png" alt="adidas"><span>JRESIDENCY.COM</span></div></div>
+    </div>
   </div>
 </div></div>
   <ul class="fnotas">
@@ -204,73 +213,77 @@ footer{text-align:center;padding:40px 20px;color:#888;font-size:13px}footer img{
 </article><article class="fcard">
   <h4>Early Bird · <span class="lv" lang="es">Familias athletum</span><span class="lv" lang="en">Athletum families</span> · <code>EBATH</code></h4>
   <div class="fpar"><div class="fly post" data-fly="ebath-post">
-  <div class="fly-foto" style="background-image:url(recursos/eb_ath.jpg);background-position:50% 60%"></div>
+  <div class="fly-foto" style="background-image:url(recursos/ig_celebran.jpg);background-position:52% 50%"></div>
   <div class="fly-velo"></div>
   <div class="fly-in">
     <img class="fly-logo" src="recursos/logo_header.png" alt="Juventus Residency">
-    <div class="fly-tag">ATHLETUM FAMILIES</div>
-    <div class="fly-fase">EARLY BIRD</div>
-    <div class="fly-prod">HIGH-PERFORMANCE<br>TRAINING CAMP · ITALY</div>
-    <div class="fly-monto"><b>$1,000</b><span>OFF</span></div>
-    <div class="fly-cod">CODE <b>EBATH</b></div>
-    <div class="fly-vig">FROM DECEMBER 1 · LIMITED SPOTS</div>
-    <div class="fly-cta">APPLY NOW</div>
-    <div class="fly-pie"><img src="recursos/logo_medical.png" alt="J Medical"><img src="recursos/logo_adidas.png" alt="adidas"><span>JRESIDENCY.COM</span></div>
+    <div class="fly-bajo">
+      <div class="fly-tag">ATHLETUM FAMILIES</div>
+      <div class="fly-fase">EARLY BIRD</div>
+      <div class="fly-prod">HIGH-PERFORMANCE TRAINING CAMP · ITALY</div>
+      <div class="fly-fila"><div class="fly-monto"><b>$1,000</b><span>OFF</span></div>
+        <div class="fly-dcha"><div class="fly-cod">CODE <b>EBATH</b></div><div class="fly-vig">FROM DEC 1 · LIMITED SPOTS</div></div></div>
+      <div class="fly-fila fly-fin"><div class="fly-cta">APPLY NOW</div>
+        <div class="fly-pie"><img src="recursos/logo_medical.png" alt="J Medical"><img src="recursos/logo_adidas.png" alt="adidas"><span>JRESIDENCY.COM</span></div></div>
+    </div>
   </div>
 </div><div class="fly story" data-fly="ebath-story">
-  <div class="fly-foto" style="background-image:url(recursos/eb_ath.jpg);background-position:42% 50%"></div>
+  <div class="fly-foto" style="background-image:url(recursos/ig_celebran.jpg);background-position:55% 50%"></div>
   <div class="fly-velo"></div>
   <div class="fly-in">
     <img class="fly-logo" src="recursos/logo_header.png" alt="Juventus Residency">
-    <div class="fly-tag">ATHLETUM FAMILIES</div>
-    <div class="fly-fase">EARLY BIRD</div>
-    <div class="fly-prod">HIGH-PERFORMANCE<br>TRAINING CAMP · ITALY</div>
-    <div class="fly-monto"><b>$1,000</b><span>OFF</span></div>
-    <div class="fly-cod">CODE <b>EBATH</b></div>
-    <div class="fly-vig">FROM DECEMBER 1 · LIMITED SPOTS</div>
-    <div class="fly-cta">APPLY NOW</div>
-    <div class="fly-pie"><img src="recursos/logo_medical.png" alt="J Medical"><img src="recursos/logo_adidas.png" alt="adidas"><span>JRESIDENCY.COM</span></div>
+    <div class="fly-bajo">
+      <div class="fly-tag">ATHLETUM FAMILIES</div>
+      <div class="fly-fase">EARLY BIRD</div>
+      <div class="fly-prod">HIGH-PERFORMANCE TRAINING CAMP · ITALY</div>
+      <div class="fly-fila"><div class="fly-monto"><b>$1,000</b><span>OFF</span></div>
+        <div class="fly-dcha"><div class="fly-cod">CODE <b>EBATH</b></div><div class="fly-vig">FROM DEC 1 · LIMITED SPOTS</div></div></div>
+      <div class="fly-fila fly-fin"><div class="fly-cta">APPLY NOW</div>
+        <div class="fly-pie"><img src="recursos/logo_medical.png" alt="J Medical"><img src="recursos/logo_adidas.png" alt="adidas"><span>JRESIDENCY.COM</span></div></div>
+    </div>
   </div>
 </div></div>
   <ul class="fnotas">
     <li><span class="lv" lang="es"><b>Para quién:</b> familias de Athletum (MLS NEXT, Reserve y, si se confirma, Competitive).</span><span class="lv" lang="en"><b>Audience:</b> Athletum families (MLS NEXT, Reserve and, if confirmed, Competitive).</span></li>
-    <li><span class="lv" lang="es"><b>Descuento:</b> $1,000 con el código <b>EBATH</b>. <b>Vigencia:</b> Desde el 1 de diciembre (fecha final por confirmar).</span><span class="lv" lang="en"><b>Discount:</b> $1,000 with code <b>EBATH</b>. <b>Valid:</b> From December 1 · Limited Spots.</span></li>
+    <li><span class="lv" lang="es"><b>Descuento:</b> $1,000 con el código <b>EBATH</b>. <b>Vigencia:</b> Desde el 1 de diciembre (fecha final por confirmar).</span><span class="lv" lang="en"><b>Discount:</b> $1,000 with code <b>EBATH</b>. <b>Valid:</b> From Dec 1 · Limited Spots.</span></li>
     <li><span class="lv" lang="es">Formatos: post 4:5 (1080×1350) e historia 9:16 (1080×1920). En la historia, el botón queda por encima de la zona del sticker de enlace.</span><span class="lv" lang="en">Formats: 4:5 post (1080×1350) and 9:16 story (1080×1920). In the story, the button sits above the link-sticker area.</span></li>
   </ul>
 </article><article class="fcard">
   <h4>Early Bird · <span class="lv" lang="es">Externos</span><span class="lv" lang="en">Open to all players</span> · <code>EB27</code></h4>
   <div class="fpar"><div class="fly post" data-fly="eb27-post">
-  <div class="fly-foto" style="background-image:url(recursos/campus_aereo.jpg);background-position:50% 50%"></div>
+  <div class="fly-foto" style="background-image:url(recursos/ig_allianz.jpg);background-position:50% 30%"></div>
   <div class="fly-velo"></div>
   <div class="fly-in">
     <img class="fly-logo" src="recursos/logo_header.png" alt="Juventus Residency">
-    <div class="fly-tag">SUMMER 2027 · ITALY</div>
-    <div class="fly-fase">EARLY BIRD</div>
-    <div class="fly-prod">HIGH-PERFORMANCE<br>TRAINING CAMP · ITALY</div>
-    <div class="fly-monto"><b>$750</b><span>OFF</span></div>
-    <div class="fly-cod">CODE <b>EB27</b></div>
-    <div class="fly-vig">FROM DECEMBER 1 · LIMITED SPOTS</div>
-    <div class="fly-cta">APPLY NOW</div>
-    <div class="fly-pie"><img src="recursos/logo_medical.png" alt="J Medical"><img src="recursos/logo_adidas.png" alt="adidas"><span>JRESIDENCY.COM</span></div>
+    <div class="fly-bajo">
+      <div class="fly-tag">SUMMER 2027 · ITALY</div>
+      <div class="fly-fase">EARLY BIRD</div>
+      <div class="fly-prod">HIGH-PERFORMANCE TRAINING CAMP · ITALY</div>
+      <div class="fly-fila"><div class="fly-monto"><b>$750</b><span>OFF</span></div>
+        <div class="fly-dcha"><div class="fly-cod">CODE <b>EB27</b></div><div class="fly-vig">FROM DEC 1 · LIMITED SPOTS</div></div></div>
+      <div class="fly-fila fly-fin"><div class="fly-cta">APPLY NOW</div>
+        <div class="fly-pie"><img src="recursos/logo_medical.png" alt="J Medical"><img src="recursos/logo_adidas.png" alt="adidas"><span>JRESIDENCY.COM</span></div></div>
+    </div>
   </div>
 </div><div class="fly story" data-fly="eb27-story">
-  <div class="fly-foto" style="background-image:url(recursos/campus_aereo.jpg);background-position:60% 50%"></div>
+  <div class="fly-foto" style="background-image:url(recursos/ig_allianz.jpg);background-position:12% 50%"></div>
   <div class="fly-velo"></div>
   <div class="fly-in">
     <img class="fly-logo" src="recursos/logo_header.png" alt="Juventus Residency">
-    <div class="fly-tag">SUMMER 2027 · ITALY</div>
-    <div class="fly-fase">EARLY BIRD</div>
-    <div class="fly-prod">HIGH-PERFORMANCE<br>TRAINING CAMP · ITALY</div>
-    <div class="fly-monto"><b>$750</b><span>OFF</span></div>
-    <div class="fly-cod">CODE <b>EB27</b></div>
-    <div class="fly-vig">FROM DECEMBER 1 · LIMITED SPOTS</div>
-    <div class="fly-cta">APPLY NOW</div>
-    <div class="fly-pie"><img src="recursos/logo_medical.png" alt="J Medical"><img src="recursos/logo_adidas.png" alt="adidas"><span>JRESIDENCY.COM</span></div>
+    <div class="fly-bajo">
+      <div class="fly-tag">SUMMER 2027 · ITALY</div>
+      <div class="fly-fase">EARLY BIRD</div>
+      <div class="fly-prod">HIGH-PERFORMANCE TRAINING CAMP · ITALY</div>
+      <div class="fly-fila"><div class="fly-monto"><b>$750</b><span>OFF</span></div>
+        <div class="fly-dcha"><div class="fly-cod">CODE <b>EB27</b></div><div class="fly-vig">FROM DEC 1 · LIMITED SPOTS</div></div></div>
+      <div class="fly-fila fly-fin"><div class="fly-cta">APPLY NOW</div>
+        <div class="fly-pie"><img src="recursos/logo_medical.png" alt="J Medical"><img src="recursos/logo_adidas.png" alt="adidas"><span>JRESIDENCY.COM</span></div></div>
+    </div>
   </div>
 </div></div>
   <ul class="fnotas">
     <li><span class="lv" lang="es"><b>Para quién:</b> todas las familias que no son de Athletum: tryouts, Summer Camps, México y listas de Residency.</span><span class="lv" lang="en"><b>Audience:</b> every family outside Athletum: tryouts, Summer Camps, Mexico and Residency lists.</span></li>
-    <li><span class="lv" lang="es"><b>Descuento:</b> $750 con el código <b>EB27</b>. <b>Vigencia:</b> Desde el 1 de diciembre (fecha final por confirmar).</span><span class="lv" lang="en"><b>Discount:</b> $750 with code <b>EB27</b>. <b>Valid:</b> From December 1 · Limited Spots.</span></li>
+    <li><span class="lv" lang="es"><b>Descuento:</b> $750 con el código <b>EB27</b>. <b>Vigencia:</b> Desde el 1 de diciembre (fecha final por confirmar).</span><span class="lv" lang="en"><b>Discount:</b> $750 with code <b>EB27</b>. <b>Valid:</b> From Dec 1 · Limited Spots.</span></li>
     <li><span class="lv" lang="es">Formatos: post 4:5 (1080×1350) e historia 9:16 (1080×1920). En la historia, el botón queda por encima de la zona del sticker de enlace.</span><span class="lv" lang="en">Formats: 4:5 post (1080×1350) and 9:16 story (1080×1920). In the story, the button sits above the link-sticker area.</span></li>
   </ul>
 </article></section>
