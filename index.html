@@ -29,7 +29,8 @@ th{font:700 15px JF;text-transform:uppercase;letter-spacing:.03em;color:#fff;bac
 .chip{display:inline-block;font-size:12px;font-weight:700;padding:2px 9px;border:1px solid #444}.chip.a{background:var(--rojo);border-color:var(--rojo);color:#fff}.chip.e{color:#ddd}
 .paleta{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.paleta div{font-size:13px}.paleta i{display:block;height:58px;margin-bottom:6px}.paleta b{display:block;color:#fff}.paleta span{color:#aaa}
 .esp-t{font:700 46px JF;color:#fff;margin:6px 0 0;font-style:italic}.esp-b{font-size:15px;color:#ddd}
-.btn-demo{display:inline-block;background:var(--rojo);color:#fff;font:700 22px JF;padding:10px 26px;letter-spacing:.04em;margin-top:6px}
+.btn-demo{display:inline-block;text-decoration:none;background:var(--rojo);color:#fff;font:700 22px JF;padding:10px 26px;letter-spacing:.04em;margin-top:6px}
+.vid{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:28px;align-items:start;margin-top:14px}.vid-marco{background:#000;border:1px solid var(--linea)}.vid video{display:block;width:100%;aspect-ratio:9/16;background:#000}.vid-info h3{margin:18px 0 6px}
 .fotos{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.fotos figure{margin:0}.fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}.fotos figcaption{font-size:12.5px;color:#aaa;margin-top:4px}
 .fcard{margin:26px 0 34px}.fcard h4{font-size:26px}.fpar{display:flex;gap:18px;align-items:flex-end;flex-wrap:wrap;margin:14px 0}.fnotas{color:#ccc;font-size:14.5px;padding-left:18px}
 .fly{position:relative;overflow:hidden;background:#131313;color:#fff;font-family:JF,Inter,sans-serif;flex:none;container-type:inline-size}
@@ -58,10 +59,10 @@ details.msg{background:var(--bloque);border:1px solid var(--linea);margin:10px 0
 .meta{font-size:14px;color:#ccc}.cuerpo{background:#fff;color:#222;padding:16px 18px;font-size:14.5px}.cuerpo ul{padding-left:18px}.btn-m{display:inline-block;background:var(--rojo);color:#fff;font:700 16px JF;padding:8px 20px;margin-top:6px;text-transform:uppercase}
 pre{white-space:pre-wrap;background:#0f1a12;color:#e8f5e9;padding:14px;font:14px/1.5 Inter;border-left:4px solid #25D366;margin:0}.link{padding:0 18px 14px;font-size:13px;color:#aaa}
 footer{text-align:center;padding:40px 20px;color:#888;font-size:13px}footer img{height:40px;opacity:.8}
-@media(max-width:860px){.hero{background-size:100% auto;background-position:center top;padding-top:52vw}.hero-velo{background:linear-gradient(180deg,rgba(19,19,19,0) 25%,#131313 62%)}.g2,.g3,.msg2{grid-template-columns:1fr}.fotos{grid-template-columns:repeat(2,1fr)}.top nav{display:none}.fly.post{width:100%;max-width:400px}.fly.story{width:72%;max-width:281px}.paleta{grid-template-columns:repeat(2,1fr)}.hero{min-height:480px}}
+@media(max-width:860px){.vid{grid-template-columns:1fr}.vid-marco{max-width:320px}.hero{background-size:100% auto;background-position:center top;padding-top:52vw}.hero-velo{background:linear-gradient(180deg,rgba(19,19,19,0) 25%,#131313 62%)}.g2,.g3,.msg2{grid-template-columns:1fr}.fotos{grid-template-columns:repeat(2,1fr)}.top nav{display:none}.fly.post{width:100%;max-width:400px}.fly.story{width:72%;max-width:281px}.paleta{grid-template-columns:repeat(2,1fr)}.hero{min-height:480px}}
 </style></head><body>
 <header class="top"><img src="recursos/logo_header.png" alt="Juventus Residency"><nav>
-<a href="#producto"><span class="lv" lang="es">Producto</span><span class="lv" lang="en">Product</span></a><a href="#linea"><span class="lv" lang="es">Línea gráfica</span><span class="lv" lang="en">Visual line</span></a><a href="#flyers">Flyers</a><a href="#mensajes"><span class="lv" lang="es">Mensajes</span><span class="lv" lang="en">Messages</span></a><a href="#bases"><span class="lv" lang="es">Bases</span><span class="lv" lang="en">Lists</span></a><a href="#meta">Meta</a><a href="#web">Web</a><a href="#pendientes"><span class="lv" lang="es">Pendientes</span><span class="lv" lang="en">To confirm</span></a></nav>
+<a href="#producto"><span class="lv" lang="es">Producto</span><span class="lv" lang="en">Product</span></a><a href="#linea"><span class="lv" lang="es">Línea gráfica</span><span class="lv" lang="en">Visual line</span></a><a href="#flyers">Flyers</a><a href="#video">Video</a><a href="#mensajes"><span class="lv" lang="es">Mensajes</span><span class="lv" lang="en">Messages</span></a><a href="#bases"><span class="lv" lang="es">Bases</span><span class="lv" lang="en">Lists</span></a><a href="#meta">Meta</a><a href="#web">Web</a><a href="#pendientes"><span class="lv" lang="es">Pendientes</span><span class="lv" lang="en">To confirm</span></a></nav>
 <div class="lang"><button data-set="es">ES</button><button data-set="en">EN</button></div></header>
 
 <section class="hero"><div class="hero-velo"></div><div class="hero-in">
@@ -287,6 +288,24 @@ footer{text-align:center;padding:40px 20px;color:#888;font-size:13px}footer img{
     <li><span class="lv" lang="es">Formatos: post 4:5 (1080×1350) e historia 9:16 (1080×1920). En la historia, el botón queda por encima de la zona del sticker de enlace.</span><span class="lv" lang="en">Formats: 4:5 post (1080×1350) and 9:16 story (1080×1920). In the story, the button sits above the link-sticker area.</span></li>
   </ul>
 </article></section>
+
+<section id="video"><h2><span class="lv" lang="es">Video para Reels, historias y anuncios</span><span class="lv" lang="en">Video for Reels, Stories and ads</span></h2>
+<div class="vid"><div class="vid-marco"><video src="recursos/video_residency_summer27.mp4" poster="recursos/video_portada.jpg" controls playsinline preload="metadata"></video></div>
+<div class="vid-info">
+<p><span class="lv" lang="es">Video vertical 9:16 (1080×1920) de 27,6 segundos, hecho con material real del Instagram de Residency: camps de verano 2025 y 2026, Vinovo, el Allianz Stadium y el campus (edificio y habitaciones). Línea gráfica de Residency, textos en inglés y música épica deportiva con cortes al ritmo.</span><span class="lv" lang="en">27.6-second vertical 9:16 video (1080×1920), made with real footage from the Residency Instagram: 2025 and 2026 summer camps, Vinovo, Allianz Stadium and the campus (building and rooms). Residency visual line, English copy and epic sports music with cuts on the beat.</span></p>
+<h3><span class="lv" lang="es">Recorrido</span><span class="lv" lang="en">Storyline</span></h3>
+<ol class="lista num">
+<li>THIS SUMMER · TRAIN IN ITALY</li><li>LIVE ON THE RESIDENCY CAMPUS</li><li>TRAIN AT VINOVO</li><li>WITH JUVENTUS COACHES</li>
+<li>ALLIANZ STADIUM · TOUR &amp; MUSEUM</li><li>1 TO 4 WEEKS · AGES 12–17</li><li>MORE THAN A CAMP</li><li>SUMMER 2027 · ARE YOU READY?</li></ol>
+<p><span class="lv" lang="es">Cierre: logo de Juventus Residency, SUMMER 2027 · ITALY, HIGH-PERFORMANCE TRAINING CAMP, botón APPLY NOW, JRESIDENCY.COM, J Medical y adidas, y LIMITED SPOTS · BY INVITATION.</span><span class="lv" lang="en">Ending: Juventus Residency logo, SUMMER 2027 · ITALY, HIGH-PERFORMANCE TRAINING CAMP, APPLY NOW button, JRESIDENCY.COM, J Medical and adidas, and LIMITED SPOTS · BY INVITATION.</span></p>
+<h3><span class="lv" lang="es">Usos</span><span class="lv" lang="en">Uses</span></h3>
+<ul class="lista">
+<li><span class="lv" lang="es">No lleva precio ni código: sirve igual en Black Friday, early bird y después, y en la prueba de Meta de las 4 ciudades.</span><span class="lv" lang="en">No price or code: it works for Black Friday, early bird and afterwards, and in the 4-city Meta test.</span></li>
+<li><span class="lv" lang="es">Textos dentro de la zona segura de historias y Reels; la parte baja queda libre para el sticker de enlace.</span><span class="lv" lang="en">Copy sits inside the Stories and Reels safe zone; the bottom is kept clear for the link sticker.</span></li>
+<li><span class="lv" lang="es">Para WhatsApp (Camilo) se puede enviar el mismo archivo, acompañado del mensaje de la versión que corresponda.</span><span class="lv" lang="en">For WhatsApp (Camilo) the same file can be sent with the message for the matching version.</span></li>
+</ul>
+<p><a class="btn-demo" href="recursos/video_residency_summer27.mp4" download><span class="lv" lang="es">Descargar video</span><span class="lv" lang="en">Download video</span></a></p>
+</div></div></section>
 
 <section id="mensajes"><h2><span class="lv" lang="es">Mensajes en 2 versiones</span><span class="lv" lang="en">Messages in 2 versions</span></h2><h3><span class="lv" lang="es">Correos (Constant Contact)</span><span class="lv" lang="en">Emails (Constant Contact)</span></h3>
 <p><span class="lv" lang="es">Cuatro correos: Black Friday y early bird, cada uno en versión Athletum y versión externos. Mismo texto de base; cambia el saludo, el descuento y el código. A las familias de Athletum se les habla como "familia Athletum" (no "Juve family"). Cabecera con el logo de Residency sobre negro y foto del campus; botón rojo #FF2850.</span><span class="lv" lang="en">Four emails: Black Friday and early bird, each in an Athletum version and an outside-families version. Same base text; the greeting, discount and code change. Athletum families are addressed as "Athletum family" (not "Juve family"). Header with the Residency logo on black and a campus photo; red #FF2850 button.</span></p>
